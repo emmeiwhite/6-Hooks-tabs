@@ -7,3 +7,13 @@
   font-size: 2rem;
   font-weight: 400;
 }
+
+.duties-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.bullets {
+  margin-right: 2rem;
+}

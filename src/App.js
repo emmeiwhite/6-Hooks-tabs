@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { FaAngleDoubleRight } from "react-icons/fa";
 import Content from "./components/content/Content";
 import Sidebar from "./components/sidebar/Sidebar";
 
@@ -33,7 +32,6 @@ function App() {
 
   // handleContent
   const handleContent = (id) => {
-    console.log(id);
     const activeTab = tabs.filter((tab) => tab.id === id);
     setActiveTab(activeTab[0]);
   };
