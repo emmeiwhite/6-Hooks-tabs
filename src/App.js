@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Content from "./components/content/Content";
 import Sidebar from "./components/sidebar/Sidebar";
+import { ReactComponent as Loader } from "./components/common/Loader.svg";
 
 const url = "https://course-api.com/react-tabs-project";
 
@@ -37,7 +38,11 @@ function App() {
   };
 
   if (loading) {
-    return <h1 style={{ textAlign: "center" }}>Loading ...</h1>;
+    return (
+      <div style={{ textAlign: "center", marginTop: "2rem" }}>
+        <Loader height={100} width={100} />
+      </div>
+    );
   }
 
   if (error) {
