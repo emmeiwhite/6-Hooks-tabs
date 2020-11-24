@@ -1,12 +1,18 @@
 import React from "react";
 import "./Sidebar.css";
 
-export default function Sidebar() {
+export default function Sidebar({ tabs, handleContent }) {
+  const companies = tabs.map((tab) => ({
+    company: tab.company,
+    id: tab.id,
+  }));
   return (
     <div className="sidebar">
-      <button className="btn">SideBar</button>
-      <button className="btn">SideBar</button>
-      <button className="btn">SideBar</button>
+      {companies.map(({ company, id }) => (
+        <button className="btn" key={id} onClick={() => handleContent(id)}>
+          {company}
+        </button>
+      ))}
     </div>
   );
 }
