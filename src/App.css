@@ -1,12 +1,16 @@
 .main-wrapper {
   max-width: 1200px;
   margin: 3rem auto;
-  border: 1px solid #cccccc;
 }
-.main-wrapper .main-heading {
-  text-align: center;
+.main-heading {
+  display: flex;
+  justify-content: center;
+}
+.main-heading-text {
   font-size: 3rem;
   font-weight: 300;
+  border-bottom: 2px solid #2caeba;
+  display: inline;
 }
 .content-wrapper {
   display: grid;

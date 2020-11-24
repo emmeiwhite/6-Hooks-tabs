@@ -46,7 +46,10 @@ function App() {
 
   return (
     <main className="main-wrapper">
-      <h1 className="main-heading">Experience</h1>
+      <div class="main-heading">
+        <h1 className="main-heading-text">Experience</h1>
+      </div>
+
       {tabs.length > 0 && (
         <section className="content-wrapper">
           <Sidebar tabs={tabs} handleContent={handleContent} />
