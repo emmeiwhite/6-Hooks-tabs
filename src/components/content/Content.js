@@ -13,12 +13,10 @@ export default function Experience({ tab }) {
         <div className="main-content" key={tab.id}>
           <p className="designation"> Full Stack Web Developer</p>
           <button className="company">{tab.company}</button>
-          <p>{tab.dates}</p>
+          <p className="date">{tab.dates}</p>
           {tab.duties.map((duty, index) => (
             <div className="duties-wrapper" key={index}>
-              <span className="bullets">
-                <FaAngleDoubleRight />
-              </span>
+              <FaAngleDoubleRight className="bullets" />
 
               <p className="duties">{duty}</p>
             </div>
